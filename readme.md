@@ -32,9 +32,10 @@
 
 - Prettier
 
-  - open you settings.json file add add this
+  - open you settings.json file add add these lines
 
   ```js
+  "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
