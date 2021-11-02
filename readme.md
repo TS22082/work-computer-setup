@@ -2,11 +2,23 @@
 
 - Slack
   - Have this installed on your computer rather than use the web app.
+  - Search and install "Slack" in Ubuntu Software
 - VScode
+  - Search "VScode" and install "code" in Ubuntu Software
 - Zoom
-- Git bash
+  - follow this address : https://zoom.us/download?os=linux
+  - Choose linux type: "Ubuntu"
+  - Double click the .deb file that was downloaded and it should begin the install
 - Node
-  - Current version; Not LTS
+  - Do not install node from Ubuntus repos; it is out of date (version: 10)
+  - Begin by installing curl `sudo apt install curl`
+  - Verify installation `curl --version`
+  - Run this command `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
+  - Run all three just to be sure : `source ~/.profile` `source ~/.bashrc` `source ~/.zshrc`
+  - Confirm latest LTS version available
+    - `nvm list-remote`
+  - In my case the latest LTS version was v16.13.0 `nvm install v16.13.0`
+    - The latest version of node (17.01) does not work with current version of expo. LTS is guaranteed to be stable.
 
 # Extensions
 
